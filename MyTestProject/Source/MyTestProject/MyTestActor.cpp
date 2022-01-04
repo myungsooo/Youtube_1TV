@@ -2,12 +2,14 @@
 
 
 #include "MyTestActor.h"
+#include "Engine.h"
 
 // Sets default values
 AMyTestActor::AMyTestActor()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+    GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Hello world"));
 
 }
 

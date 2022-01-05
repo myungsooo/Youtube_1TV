@@ -13,5 +13,14 @@ UCLASS()
 class MYTESTPROJECT_API AMyTestCharacter : public ABasicCharacter
 {
 	GENERATED_BODY()
-	
+
+public:
+	AMyTestCharacter();
+
+	// 자주 사용하는 패턴이니 암기
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
+	class USpringArmComponent* CameraBoom;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
+	class UCameraComponent* FollowCamera;
 };

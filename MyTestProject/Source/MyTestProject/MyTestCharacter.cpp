@@ -4,8 +4,11 @@
 #include "MyTestCharacter.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/DefaultPawn.h"
 #include "GameFramework/PlayerController.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 AMyTestCharacter::AMyTestCharacter()
 {
@@ -18,7 +21,7 @@ AMyTestCharacter::AMyTestCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
 
-	
+	GetCharacterMovement()->bOrientRotationToMovement = true;
 }
 
 void AMyTestCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

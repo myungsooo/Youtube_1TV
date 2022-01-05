@@ -2679,4 +2679,6 @@
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/SpringArmComponent.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/SpringArmComponent.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Camera/CameraComponent.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/CameraComponent.generated.h
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/CameraComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/DefaultPawn.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/DefaultPawn.generated.h

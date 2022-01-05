@@ -36,7 +36,7 @@ public: \
 
 #define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AMyTestCharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API AMyTestCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyTestCharacter) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AMyTestCharacter); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMyTestCharacter); \
@@ -48,8 +48,6 @@ public:
 
 
 #define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AMyTestCharacter() { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMyTestCharacter(AMyTestCharacter&&); \

@@ -11,7 +11,7 @@ AMyTestActor::AMyTestActor()
 	PrimaryActorTick.bCanEverTick = true;
     GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Hello world"));
 	UE_LOG(LogTemp, Warning, TEXT("Hello giicha2"));
-
+ 
 }
 
 // Called when the game starts or when spawned

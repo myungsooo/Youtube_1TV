@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeMyTestActor() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AMyTestActor::execOnOverlapBegin)
 	{
@@ -144,6 +145,10 @@ void EmptyLinkFunctionForGeneratedCodeMyTestActor() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mStaticMesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mStaticMesh;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ParticleFX_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ParticleFX;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -177,9 +182,17 @@ void EmptyLinkFunctionForGeneratedCodeMyTestActor() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyTestActor_Statics::NewProp_mStaticMesh = { "mStaticMesh", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTestActor, mStaticMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyTestActor_Statics::NewProp_mStaticMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestActor_Statics::NewProp_mStaticMesh_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestActor_Statics::NewProp_ParticleFX_MetaData[] = {
+		{ "Category", "MyItem" },
+		{ "ModuleRelativePath", "MyTestActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyTestActor_Statics::NewProp_ParticleFX = { "ParticleFX", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTestActor, ParticleFX), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyTestActor_Statics::NewProp_ParticleFX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestActor_Statics::NewProp_ParticleFX_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyTestActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestActor_Statics::NewProp_CollisionSphere,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestActor_Statics::NewProp_mStaticMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestActor_Statics::NewProp_ParticleFX,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMyTestActor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMyTestActor>::IsAbstract,
@@ -208,7 +221,7 @@ void EmptyLinkFunctionForGeneratedCodeMyTestActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyTestActor, 1427891035);
+	IMPLEMENT_CLASS(AMyTestActor, 1499627841);
 	template<> MYTESTPROJECT_API UClass* StaticClass<AMyTestActor>()
 	{
 		return AMyTestActor::StaticClass();

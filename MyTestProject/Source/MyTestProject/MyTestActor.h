@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "MyTestActor.generated.h"
 
-class USphereComponent;
+
 UCLASS()
 class MYTESTPROJECT_API AMyTestActor : public AActor
 {
@@ -29,6 +29,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	UStaticMeshComponent* mStaticMesh;
+
+	UPROPERTY(EditDefaultsOnly, Category = "MyItem")
+		UParticleSystem* ParticleFX;
 
 	UFUNCTION()
 		void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32

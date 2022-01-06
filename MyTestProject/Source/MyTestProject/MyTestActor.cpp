@@ -7,6 +7,8 @@
 #include "BasicCharacter.h"
 #include "Engine.h"
 #include "MyTestCharacter.h"
+#include "Kismet/GameplayStatics.h"
+#include "Particles/ParticleSystemComponent.h"
 
 // Sets default values
 AMyTestActor::AMyTestActor()
@@ -22,7 +24,10 @@ AMyTestActor::AMyTestActor()
 	CollisionSphere->SetupAttachment(RootComponent);
 
 	CollisionSphere->OnComponentBeginOverlap.AddDynamic(this, &AMyTestActor::OnOverlapBegin);
- 
+
+	static ConstructorHelpers::FObjectFinder<UParticleSystem>ParticleAsset(TEXT("/Game/StarterContent/Particles/P_Explosion.P_Explosion"));
+	ParticleFX = ParticleAsset.Object;
+	
 }
 
 
@@ -46,6 +51,8 @@ void AMyTestActor::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* O
 	if (OtherActor->IsA(AMyTestCharacter::StaticClass()))
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Collision Touch!"));
+
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ParticleFX, GetActorLocation());
 		Destroy();
 	}
 }

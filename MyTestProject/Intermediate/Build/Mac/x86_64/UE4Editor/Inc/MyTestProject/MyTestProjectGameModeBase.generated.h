@@ -60,7 +60,11 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyTestProjectGameModeBase)
 
 
-#define MyTestProject_Source_MyTestProject_MyTestProjectGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET
+#define MyTestProject_Source_MyTestProject_MyTestProjectGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CurrentWidget() { return STRUCT_OFFSET(AMyTestProjectGameModeBase, CurrentWidget); } \
+	FORCEINLINE static uint32 __PPO__HUDwidget() { return STRUCT_OFFSET(AMyTestProjectGameModeBase, HUDwidget); }
+
+
 #define MyTestProject_Source_MyTestProject_MyTestProjectGameModeBase_h_12_PROLOG
 #define MyTestProject_Source_MyTestProject_MyTestProjectGameModeBase_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

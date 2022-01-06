@@ -2668,6 +2668,18 @@
   /Users/song/soo/Youtube_1TV/MyTestProject/Intermediate/Build/Mac/x86_64/UE4Editor/Development/MyTestProject/Definitions.MyTestProject.h \
   /Users/song/soo/Youtube_1TV/MyTestProject/Source/MyTestProject/MyTestActor.h \
   /Users/song/soo/Youtube_1TV/MyTestProject/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestProject/MyTestActor.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/SphereComponent.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/ShapeComponent.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/ShapeComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/SphereComponent.generated.h \
+  /Users/song/soo/Youtube_1TV/MyTestProject/Source/MyTestProject/BasicCharacter.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/CharacterMovementReplication.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/RootMotionSource.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/Character.generated.h \
+  /Users/song/soo/Youtube_1TV/MyTestProject/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestProject/BasicCharacter.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Public/Engine.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Core/Public/Misc/MonolithicHeaderBoilerplate.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Core/Public/Core.h \
@@ -2804,22 +2816,12 @@
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/ParticleModuleOrientationAxisLock.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Public/Scalability.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Public/EngineMinimal.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/CharacterMovementReplication.generated.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/RootMotionSource.generated.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/Character.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/GameModeBase.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Engine/ServerStatReplicator.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/ServerStatReplicator.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/GameModeBase.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/CapsuleComponent.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/ShapeComponent.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/ShapeComponent.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/CapsuleComponent.generated.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/SphereComponent.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/SphereComponent.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/BoxComponent.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/AudioComponent.h \
@@ -3327,4 +3329,6 @@
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Core/Public/Internationalization/FastDecimalFormat.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Slate/Public/Widgets/Input/SSpinBox.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Slate/Public/Widgets/Input/SSlider.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Slate/Public/Framework/Docking/LayoutService.h
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Slate/Public/Framework/Docking/LayoutService.h \
+  /Users/song/soo/Youtube_1TV/MyTestProject/Source/MyTestProject/MyTestCharacter.h \
+  /Users/song/soo/Youtube_1TV/MyTestProject/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestProject/MyTestCharacter.generated.h

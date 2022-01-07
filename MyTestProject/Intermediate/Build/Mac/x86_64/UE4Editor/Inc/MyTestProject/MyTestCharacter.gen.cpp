@@ -13,13 +13,152 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMyTestCharacter() {}
 // Cross Module References
+	MYTESTPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FCharcterInfo();
+	UPackage* Z_Construct_UPackage__Script_MyTestProject();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
+	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	MYTESTPROJECT_API UClass* Z_Construct_UClass_AMyTestCharacter_NoRegister();
 	MYTESTPROJECT_API UClass* Z_Construct_UClass_AMyTestCharacter();
 	MYTESTPROJECT_API UClass* Z_Construct_UClass_ABasicCharacter();
-	UPackage* Z_Construct_UPackage__Script_MyTestProject();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 // End Cross Module References
+
+static_assert(std::is_polymorphic<FCharcterInfo>() == std::is_polymorphic<FTableRowBase>(), "USTRUCT FCharcterInfo cannot be polymorphic unless super FTableRowBase is polymorphic");
+
+class UScriptStruct* FCharcterInfo::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern MYTESTPROJECT_API uint32 Get_Z_Construct_UScriptStruct_FCharcterInfo_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FCharcterInfo, Z_Construct_UPackage__Script_MyTestProject(), TEXT("CharcterInfo"), sizeof(FCharcterInfo), Get_Z_Construct_UScriptStruct_FCharcterInfo_Hash());
+	}
+	return Singleton;
+}
+template<> MYTESTPROJECT_API UScriptStruct* StaticStruct<FCharcterInfo>()
+{
+	return FCharcterInfo::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FCharcterInfo(FCharcterInfo::StaticStruct, TEXT("/Script/MyTestProject"), TEXT("CharcterInfo"), false, nullptr, nullptr);
+static struct FScriptStruct_MyTestProject_StaticRegisterNativesFCharcterInfo
+{
+	FScriptStruct_MyTestProject_StaticRegisterNativesFCharcterInfo()
+	{
+		UScriptStruct::DeferCppStructOps<FCharcterInfo>(FName(TEXT("CharcterInfo")));
+	}
+} ScriptStruct_MyTestProject_StaticRegisterNativesFCharcterInfo;
+	struct Z_Construct_UScriptStruct_FCharcterInfo_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_CharacterID;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_CharacterName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterThumbnail_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CharacterThumbnail;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterLevel_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_CharacterLevel;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Description_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_Description;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharcterInfo_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "Comment", "/**\n * \n */" },
+		{ "ModuleRelativePath", "MyTestCharacter.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FCharcterInfo>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterID_MetaData[] = {
+		{ "Category", "CharcterInfo" },
+		{ "ModuleRelativePath", "MyTestCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterID = { "CharacterID", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharcterInfo, CharacterID), METADATA_PARAMS(Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterID_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterID_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterName_MetaData[] = {
+		{ "Category", "CharcterInfo" },
+		{ "ModuleRelativePath", "MyTestCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterName = { "CharacterName", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharcterInfo, CharacterName), METADATA_PARAMS(Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterThumbnail_MetaData[] = {
+		{ "Category", "CharcterInfo" },
+		{ "ModuleRelativePath", "MyTestCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterThumbnail = { "CharacterThumbnail", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharcterInfo, CharacterThumbnail), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterThumbnail_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterThumbnail_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterLevel_MetaData[] = {
+		{ "Category", "CharcterInfo" },
+		{ "ModuleRelativePath", "MyTestCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterLevel = { "CharacterLevel", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharcterInfo, CharacterLevel), METADATA_PARAMS(Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterLevel_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterLevel_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_Description_MetaData[] = {
+		{ "Category", "CharcterInfo" },
+		{ "ModuleRelativePath", "MyTestCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_Description = { "Description", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharcterInfo, Description), METADATA_PARAMS(Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_Description_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_Description_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCharcterInfo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterID,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterThumbnail,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_CharacterLevel,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharcterInfo_Statics::NewProp_Description,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FCharcterInfo_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_MyTestProject,
+		Z_Construct_UScriptStruct_FTableRowBase,
+		&NewStructOps,
+		"CharcterInfo",
+		sizeof(FCharcterInfo),
+		alignof(FCharcterInfo),
+		Z_Construct_UScriptStruct_FCharcterInfo_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharcterInfo_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FCharcterInfo_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharcterInfo_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FCharcterInfo()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FCharcterInfo_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_MyTestProject();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("CharcterInfo"), sizeof(FCharcterInfo), Get_Z_Construct_UScriptStruct_FCharcterInfo_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FCharcterInfo_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FCharcterInfo_Hash() { return 2994267938U; }
 	void AMyTestCharacter::StaticRegisterNativesAMyTestCharacter()
 	{
 	}
@@ -51,7 +190,6 @@ void EmptyLinkFunctionForGeneratedCodeMyTestCharacter() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestCharacter_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "MyTestCharacter.h" },
 		{ "ModuleRelativePath", "MyTestCharacter.h" },
@@ -106,7 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeMyTestCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyTestCharacter, 4165607934);
+	IMPLEMENT_CLASS(AMyTestCharacter, 1576730991);
 	template<> MYTESTPROJECT_API UClass* StaticClass<AMyTestCharacter>()
 	{
 		return AMyTestCharacter::StaticClass();

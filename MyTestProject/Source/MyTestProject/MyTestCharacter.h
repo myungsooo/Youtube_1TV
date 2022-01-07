@@ -4,11 +4,42 @@
 
 #include "CoreMinimal.h"
 #include "BasicCharacter.h"
+#include "Engine/DataTable.h"
 #include "MyTestCharacter.generated.h"
 
 /**
  * 
  */
+
+USTRUCT(BlueprintType)
+struct FCharcterInfo : public FTableRowBase
+{
+	GENERATED_BODY()
+public:
+	FCharcterInfo()
+	{
+		CharacterName = FText::FromString("Name");
+		CharacterLevel = 1;
+		Description = FText::FromString("Your Character is ....");
+	}
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FName CharacterID;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FText CharacterName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UTexture2D* CharacterThumbnail;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 CharacterLevel;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FText Description;
+	
+};
+
 UCLASS()
 class MYTESTPROJECT_API AMyTestCharacter : public ABasicCharacter
 {

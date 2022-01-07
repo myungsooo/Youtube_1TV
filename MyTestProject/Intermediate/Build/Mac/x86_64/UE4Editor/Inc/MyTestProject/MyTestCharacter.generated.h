@@ -13,10 +13,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MYTESTPROJECT_MyTestCharacter_generated_h
 
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_SPARSE_DATA
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_RPC_WRAPPERS
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_INCLASS_NO_PURE_DECLS \
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_17_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FCharcterInfo_Statics; \
+	MYTESTPROJECT_API static class UScriptStruct* StaticStruct(); \
+	typedef FTableRowBase Super;
+
+
+template<> MYTESTPROJECT_API UScriptStruct* StaticStruct<struct FCharcterInfo>();
+
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_SPARSE_DATA
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_RPC_WRAPPERS
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_RPC_WRAPPERS_NO_PURE_DECLS
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyTestCharacter(); \
 	friend struct Z_Construct_UClass_AMyTestCharacter_Statics; \
@@ -25,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(AMyTestCharacter)
 
 
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_INCLASS \
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_INCLASS \
 private: \
 	static void StaticRegisterNativesAMyTestCharacter(); \
 	friend struct Z_Construct_UClass_AMyTestCharacter_Statics; \
@@ -34,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(AMyTestCharacter)
 
 
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_STANDARD_CONSTRUCTORS \
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMyTestCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyTestCharacter) \
@@ -47,7 +55,7 @@ private: \
 public:
 
 
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_ENHANCED_CONSTRUCTORS \
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMyTestCharacter(AMyTestCharacter&&); \
@@ -58,28 +66,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMyTestCharacter)
 
 
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_PRIVATE_PROPERTY_OFFSET
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_12_PROLOG
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_GENERATED_BODY_LEGACY \
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_PRIVATE_PROPERTY_OFFSET
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_43_PROLOG
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_SPARSE_DATA \
-	MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_RPC_WRAPPERS \
-	MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_INCLASS \
-	MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_STANDARD_CONSTRUCTORS \
+	MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_PRIVATE_PROPERTY_OFFSET \
+	MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_SPARSE_DATA \
+	MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_RPC_WRAPPERS \
+	MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_INCLASS \
+	MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_GENERATED_BODY \
+#define MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_SPARSE_DATA \
-	MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_INCLASS_NO_PURE_DECLS \
-	MyTestProject_Source_MyTestProject_MyTestCharacter_h_15_ENHANCED_CONSTRUCTORS \
+	MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_PRIVATE_PROPERTY_OFFSET \
+	MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_SPARSE_DATA \
+	MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+	MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_INCLASS_NO_PURE_DECLS \
+	MyTestProject_Source_MyTestProject_MyTestCharacter_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

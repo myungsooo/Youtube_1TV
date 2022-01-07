@@ -14,8 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define MYTESTPROJECT_BasicCharacter_generated_h
 
 #define MyTestProject_Source_MyTestProject_BasicCharacter_h_12_SPARSE_DATA
-#define MyTestProject_Source_MyTestProject_BasicCharacter_h_12_RPC_WRAPPERS
-#define MyTestProject_Source_MyTestProject_BasicCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define MyTestProject_Source_MyTestProject_BasicCharacter_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execAttack_Melee_End); \
+	DECLARE_FUNCTION(execAttack_Melee);
+
+
+#define MyTestProject_Source_MyTestProject_BasicCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execAttack_Melee_End); \
+	DECLARE_FUNCTION(execAttack_Melee);
+
+
 #define MyTestProject_Source_MyTestProject_BasicCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABasicCharacter(); \

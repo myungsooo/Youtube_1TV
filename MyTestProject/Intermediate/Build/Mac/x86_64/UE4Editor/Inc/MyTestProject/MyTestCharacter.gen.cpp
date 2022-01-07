@@ -244,7 +244,7 @@ static struct FScriptStruct_MyTestProject_StaticRegisterNativesFCharcterInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyTestCharacter, 1576730991);
+	IMPLEMENT_CLASS(AMyTestCharacter, 3613512964);
 	template<> MYTESTPROJECT_API UClass* StaticClass<AMyTestCharacter>()
 	{
 		return AMyTestCharacter::StaticClass();

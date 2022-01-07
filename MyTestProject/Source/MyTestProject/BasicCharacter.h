@@ -26,4 +26,23 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION(BlueprintCallable)
+	void Attack_Melee();
+	
+	UFUNCTION(BlueprintCallable)
+	void Attack_Melee_End();
+
+	UPROPERTY(EditDefaultsOnly, Category = Pawn)
+	UAnimMontage* Attack_Melee_Anim01;
+	
+	UPROPERTY(EditDefaultsOnly, Category = Pawn)
+	UAnimMontage* Attack_Melee_Anim02;
+	
+	UPROPERTY(EditDefaultsOnly, Category = Pawn)
+	UAnimMontage* Attack_Melee_Anim03;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool isDuringAttck;
+
+	int ComboAttack_Num;
 };

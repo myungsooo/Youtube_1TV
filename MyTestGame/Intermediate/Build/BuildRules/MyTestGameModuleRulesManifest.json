@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/song/soo/Youtube_1TV/MyTestGame/Source/MyTestGame/MyTestGame.Build.cs",
+		"/Users/song/soo/Youtube_1TV/MyTestGame/Source/MyTestGame.Target.cs",
+		"/Users/song/soo/Youtube_1TV/MyTestGame/Source/MyTestGameEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.1"
+}

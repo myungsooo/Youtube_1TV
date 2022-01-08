@@ -23,5 +23,11 @@ public:
 
 	// 카메라 생성
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
-	class UCameraComponent* FollowCamera; 
+	class UCameraComponent* FollowCamera;
+
+// 캐릭터 움직이게 하는 코드 (있는 걸 사용하는 겁니다.)
+protected:
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void MoveForward(float value);
+	void MoveRight(float value); 
 };

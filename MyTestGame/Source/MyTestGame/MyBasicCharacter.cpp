@@ -2,12 +2,17 @@
 
 
 #include "MyBasicCharacter.h"
+#include "Engine.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AMyBasicCharacter::AMyBasicCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	static ConstructorHelpers::FObjectFinder<UParticleSystem>ParticleAsset(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
+	HitFX = ParticleAsset.Object;
 
 	isDuringAttack = false;
 	ComboAttack_Num = 0;
@@ -63,5 +68,10 @@ void AMyBasicCharacter::Attack_Melee()
 void AMyBasicCharacter::Attack_Melee_End()
 {
 	isDuringAttack = false;
+}
+
+void AMyBasicCharacter::ShowFX()
+{
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitFX, GetActorLocation());
 }
 

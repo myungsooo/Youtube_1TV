@@ -9,6 +9,15 @@ void UMyTestAnimNotifyState::NotifyBegin(USkeletalMeshComponent* MeshComp, UAnim
 	float TotalDuration)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Purple, __FUNCTION__);
+
+	if (MeshComp != NULL && MeshComp->GetOwner() != NULL)
+	{
+		AMyBasicCharacter* Player = Cast<AMyBasicCharacter>(MeshComp->GetOwner());
+		if (Player != NULL)
+		{
+			Player->ShowFX();
+		}
+	}
 }
 
 void UMyTestAnimNotifyState::NotifyEnd(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation)

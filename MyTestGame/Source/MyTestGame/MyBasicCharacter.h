@@ -31,7 +31,12 @@ public:
 
 	void Attack_Melee();
 	void Attack_Melee_End();
+	void ShowFX();
 
 	bool isDuringAttack = true;
 	int32 ComboAttack_Num;
+
+	// 이펙트
+	UPROPERTY(EditDefaultsOnly, Category = "MyFX")
+	UParticleSystem* HitFX;
 };

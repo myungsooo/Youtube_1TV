@@ -29,7 +29,7 @@ void AMyTestGameCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 	check((PlayerInputComponent));
 	PlayerInputComponent->BindAxis("MoveForward", this, &AMyTestGameCharacter::MoveForward); 
 	PlayerInputComponent->BindAxis("MoveRight", this, &AMyTestGameCharacter::MoveRight); 
-	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &AMyTestGameCharacter::Attack_Melee);
+	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &AMyBasicCharacter::Attack_Melee);
 }
 
 void AMyTestGameCharacter::MoveForward(float value)
@@ -53,10 +53,5 @@ void AMyTestGameCharacter::MoveRight(float value)
 		const FVector Direction = FRotationMatrix(YawRot).GetUnitAxis(EAxis::Y);
 		AddMovementInput(Direction, value);
 	}
-}
-
-void AMyTestGameCharacter::Attack_Melee()
-{
-	PlayAnimMontage(Attack_Melee_AnimSet, 1.0f);
 }
 

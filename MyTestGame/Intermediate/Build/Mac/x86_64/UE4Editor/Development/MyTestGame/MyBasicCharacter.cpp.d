@@ -3327,4 +3327,6 @@
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Core/Public/Internationalization/FastDecimalFormat.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Slate/Public/Widgets/Input/SSpinBox.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Slate/Public/Widgets/Input/SSlider.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Slate/Public/Framework/Docking/LayoutService.h
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Slate/Public/Framework/Docking/LayoutService.h \
+  /Users/song/soo/Youtube_1TV/MyTestGame/Source/MyTestGame/MyTestWeapon.h \
+  /Users/song/soo/Youtube_1TV/MyTestGame/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestGame/MyTestWeapon.generated.h

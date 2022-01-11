@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeMyTestWeapon() {}
 	MYTESTGAME_API UClass* Z_Construct_UClass_AMyTestWeapon();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_MyTestGame();
+	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 // End Cross Module References
 	void AMyTestWeapon::StaticRegisterNativesAMyTestWeapon()
 	{
@@ -31,6 +33,15 @@ void EmptyLinkFunctionForGeneratedCodeMyTestWeapon() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponMesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WeaponMesh;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponCollision_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WeaponCollision;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -42,8 +53,29 @@ void EmptyLinkFunctionForGeneratedCodeMyTestWeapon() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestWeapon_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "MyTestWeapon.h" },
 		{ "ModuleRelativePath", "MyTestWeapon.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestWeapon_Statics::NewProp_WeaponMesh_MetaData[] = {
+		{ "Category", "Weapon" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "MyTestWeapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyTestWeapon_Statics::NewProp_WeaponMesh = { "WeaponMesh", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTestWeapon, WeaponMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyTestWeapon_Statics::NewProp_WeaponMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestWeapon_Statics::NewProp_WeaponMesh_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestWeapon_Statics::NewProp_WeaponCollision_MetaData[] = {
+		{ "Category", "Weapon" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "MyTestWeapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyTestWeapon_Statics::NewProp_WeaponCollision = { "WeaponCollision", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTestWeapon, WeaponCollision), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyTestWeapon_Statics::NewProp_WeaponCollision_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestWeapon_Statics::NewProp_WeaponCollision_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyTestWeapon_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestWeapon_Statics::NewProp_WeaponMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestWeapon_Statics::NewProp_WeaponCollision,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMyTestWeapon_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMyTestWeapon>::IsAbstract,
 	};
@@ -53,11 +85,11 @@ void EmptyLinkFunctionForGeneratedCodeMyTestWeapon() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AMyTestWeapon_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestWeapon_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AMyTestWeapon_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestWeapon_Statics::Class_MetaDataParams))
@@ -71,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeMyTestWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyTestWeapon, 1839925010);
+	IMPLEMENT_CLASS(AMyTestWeapon, 1194271052);
 	template<> MYTESTGAME_API UClass* StaticClass<AMyTestWeapon>()
 	{
 		return AMyTestWeapon::StaticClass();

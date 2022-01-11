@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "MyBasicCharacter.h"
+#include "GameFramework/Actor.h"
 #include "MyTestGameCharacter.generated.h"
 
 /**
@@ -17,6 +18,7 @@ class MYTESTGAME_API AMyTestGameCharacter : public AMyBasicCharacter
 public:
 	AMyTestGameCharacter(); // 생성자를 만들기
 
+	virtual void PostInitializeComponents() override;
 	// 카메라 지지대
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 	class USpringArmComponent* CameraBoom;

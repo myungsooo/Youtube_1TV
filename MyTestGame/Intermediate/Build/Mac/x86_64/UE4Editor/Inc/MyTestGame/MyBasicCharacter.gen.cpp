@@ -34,6 +34,10 @@ void EmptyLinkFunctionForGeneratedCodeMyBasicCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponAttachPoint_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_WeaponAttachPoint;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Attack_AnimMontage_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Attack_AnimMontage;
@@ -57,6 +61,13 @@ void EmptyLinkFunctionForGeneratedCodeMyBasicCharacter() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_WeaponAttachPoint_MetaData[] = {
+		{ "Category", "Inventory" },
+		{ "ModuleRelativePath", "MyBasicCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_WeaponAttachPoint = { "WeaponAttachPoint", nullptr, (EPropertyFlags)0x0020080000010001, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyBasicCharacter, WeaponAttachPoint), METADATA_PARAMS(Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_WeaponAttachPoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_WeaponAttachPoint_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_Attack_AnimMontage_MetaData[] = {
 		{ "Category", "Pawn" },
 		{ "ModuleRelativePath", "MyBasicCharacter.h" },
@@ -73,6 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeMyBasicCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_HitFX = { "HitFX", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyBasicCharacter, HitFX), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_HitFX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_HitFX_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyBasicCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_WeaponAttachPoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_Attack_AnimMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_HitFX,
 	};
@@ -103,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeMyBasicCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyBasicCharacter, 2498167958);
+	IMPLEMENT_CLASS(AMyBasicCharacter, 2983204682);
 	template<> MYTESTGAME_API UClass* StaticClass<AMyBasicCharacter>()
 	{
 		return AMyBasicCharacter::StaticClass();

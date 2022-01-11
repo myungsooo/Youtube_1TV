@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeMyTestGameCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyTestGameCharacter, 1765981628);
+	IMPLEMENT_CLASS(AMyTestGameCharacter, 567145310);
 	template<> MYTESTGAME_API UClass* StaticClass<AMyTestGameCharacter>()
 	{
 		return AMyTestGameCharacter::StaticClass();

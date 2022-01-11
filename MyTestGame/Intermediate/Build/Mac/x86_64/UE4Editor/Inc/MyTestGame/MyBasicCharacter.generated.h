@@ -58,7 +58,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMyBasicCharacter)
 
 
-#define MyTestGame_Source_MyTestGame_MyBasicCharacter_h_12_PRIVATE_PROPERTY_OFFSET
+#define MyTestGame_Source_MyTestGame_MyBasicCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__WeaponAttachPoint() { return STRUCT_OFFSET(AMyBasicCharacter, WeaponAttachPoint); }
+
+
 #define MyTestGame_Source_MyTestGame_MyBasicCharacter_h_9_PROLOG
 #define MyTestGame_Source_MyTestGame_MyBasicCharacter_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -15,9 +15,25 @@ public:
 	// Sets default values for this character's properties
 	AMyBasicCharacter();
 
+	USkeletalMeshComponent* GetSpesificPawnMesh() const;
+
+	FName GetWeaponAttachPoint()const;
+
+	void EquipWeapon(class AMyTestWeapon* Weapon);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditDefaultsOnly, Category = Inventory)
+	FName WeaponAttachPoint;
+
+	TArray<class AMyTestWeapon*>Inventory;
+	
+	class AMyTestWeapon* CurrentWeapon;
+
+	void AddWeapon(class AMyTestWeapon* Weapon);
+	void SetCurrentWeapon(class AMyTestWeapon* NewWeapon, class AMyTestWeapon* LastWeapon);
 
 public:	
 	// Called every frame

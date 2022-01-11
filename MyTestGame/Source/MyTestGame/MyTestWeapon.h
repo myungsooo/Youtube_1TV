@@ -3,7 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "MyBasicCharacter.h"
 #include "GameFramework/Actor.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "MyTestWeapon.generated.h"
 
 UCLASS()
@@ -13,9 +15,22 @@ class MYTESTGAME_API AMyTestWeapon : public AActor
 	
 public:	
 	// Sets default values for this actor's properties
-	AMyTestWeapon();
+	AMyTestWeapon(const class FObjectInitializer& ObjectInitializer);
+
+	void SetOwningPawn(AMyBasicCharacter* NewOwner);
+	void AttachMeshToPawn();
+	void OnEquip(const AMyTestWeapon* LastWeapon);
+
+private:
+	UPROPERTY(VisibleDefaultsOnly, Category = Weapon)
+	USkeletalMeshComponent* WeaponMesh;
+
+	UPROPERTY(VisibleDefaultsOnly, Category = Weapon)
+	class UBoxComponent* WeaponCollision;
 
 protected:
+	class AMyBasicCharacter* MyPawn;
+	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 

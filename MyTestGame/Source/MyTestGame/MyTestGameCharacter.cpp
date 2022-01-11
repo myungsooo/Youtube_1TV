@@ -24,6 +24,11 @@ AMyTestGameCharacter::AMyTestGameCharacter()
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 }
 
+void AMyTestGameCharacter::PostInitializeComponents()
+{
+	Super::PostInitializeComponents();
+}
+
 void AMyTestGameCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	check((PlayerInputComponent));

@@ -2667,4 +2667,16 @@
   /Users/song/soo/Youtube_1TV/MyTestGame/Source/MyTestGame/MyTestWeapon.cpp \
   /Users/song/soo/Youtube_1TV/MyTestGame/Intermediate/Build/Mac/x86_64/UE4Editor/Development/MyTestGame/Definitions.MyTestGame.h \
   /Users/song/soo/Youtube_1TV/MyTestGame/Source/MyTestGame/MyTestWeapon.h \
-  /Users/song/soo/Youtube_1TV/MyTestGame/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestGame/MyTestWeapon.generated.h
+  /Users/song/soo/Youtube_1TV/MyTestGame/Source/MyTestGame/MyBasicCharacter.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/CharacterMovementReplication.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/RootMotionSource.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/Character.generated.h \
+  /Users/song/soo/Youtube_1TV/MyTestGame/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestGame/MyBasicCharacter.generated.h \
+  /Users/song/soo/Youtube_1TV/MyTestGame/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestGame/MyTestWeapon.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/ShapeComponent.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/ShapeComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/BoxComponent.generated.h

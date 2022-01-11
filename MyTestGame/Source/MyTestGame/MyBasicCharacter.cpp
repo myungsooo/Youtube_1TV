@@ -3,6 +3,7 @@
 
 #include "MyBasicCharacter.h"
 #include "Engine.h"
+#include "MyTestWeapon.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -17,8 +18,56 @@ AMyBasicCharacter::AMyBasicCharacter()
 	isDuringAttack = false;
 	ComboAttack_Num = 0;
 	
-
 }
+
+//////////////////////////////////////////////////////////////////////
+// Weapon
+
+USkeletalMeshComponent* AMyBasicCharacter::GetSpesificPawnMesh() const
+{
+	return GetMesh();
+}
+
+FName AMyBasicCharacter::GetWeaponAttachPoint() const
+{
+	return WeaponAttachPoint;
+}
+
+void AMyBasicCharacter::EquipWeapon(AMyTestWeapon* Weapon)
+{
+	if (Weapon)
+	{
+		SetCurrentWeapon(Weapon, CurrentWeapon);
+	}
+}
+
+// 무기 바꿀때 쓰는 기능
+void AMyBasicCharacter::AddWeapon(AMyTestWeapon* Weapon)
+{
+	if (Weapon)
+	{
+		Inventory.AddUnique(Weapon);
+	}
+}
+
+void AMyBasicCharacter::SetCurrentWeapon(AMyTestWeapon* NewWeapon, AMyTestWeapon* LastWeapon)
+{
+	AMyTestWeapon* LocalLastWeapon = NULL;
+	if (LastWeapon != NULL)
+	{
+		LocalLastWeapon = LastWeapon;
+	}
+
+	if (NewWeapon)
+	{
+		NewWeapon->SetOwningPawn(this);
+		NewWeapon->OnEquip(LastWeapon);
+	}
+}
+
+
+//-------------------------------------------------------------------
+
 
 // Called when the game starts or when spawned
 void AMyBasicCharacter::BeginPlay()
@@ -26,6 +75,7 @@ void AMyBasicCharacter::BeginPlay()
 	Super::BeginPlay();
 	
 }
+
 
 // Called every frame
 void AMyBasicCharacter::Tick(float DeltaTime)

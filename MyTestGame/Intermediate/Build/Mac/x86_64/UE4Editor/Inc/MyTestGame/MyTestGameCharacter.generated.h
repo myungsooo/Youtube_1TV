@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MYTESTGAME_MyTestGameCharacter_generated_h
 
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_SPARSE_DATA
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_RPC_WRAPPERS
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_INCLASS_NO_PURE_DECLS \
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_SPARSE_DATA
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_RPC_WRAPPERS
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyTestGameCharacter(); \
 	friend struct Z_Construct_UClass_AMyTestGameCharacter_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AMyTestGameCharacter)
 
 
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_INCLASS \
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesAMyTestGameCharacter(); \
 	friend struct Z_Construct_UClass_AMyTestGameCharacter_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AMyTestGameCharacter)
 
 
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_STANDARD_CONSTRUCTORS \
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMyTestGameCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyTestGameCharacter) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_ENHANCED_CONSTRUCTORS \
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMyTestGameCharacter(AMyTestGameCharacter&&); \
@@ -58,28 +58,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMyTestGameCharacter)
 
 
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_PRIVATE_PROPERTY_OFFSET
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_12_PROLOG
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_GENERATED_BODY_LEGACY \
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_PRIVATE_PROPERTY_OFFSET
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_13_PROLOG
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_SPARSE_DATA \
-	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_RPC_WRAPPERS \
-	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_INCLASS \
-	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_STANDARD_CONSTRUCTORS \
+	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_PRIVATE_PROPERTY_OFFSET \
+	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_SPARSE_DATA \
+	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_RPC_WRAPPERS \
+	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_INCLASS \
+	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_GENERATED_BODY \
+#define MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_SPARSE_DATA \
-	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_INCLASS_NO_PURE_DECLS \
-	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_15_ENHANCED_CONSTRUCTORS \
+	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_PRIVATE_PROPERTY_OFFSET \
+	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_SPARSE_DATA \
+	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_INCLASS_NO_PURE_DECLS \
+	MyTestGame_Source_MyTestGame_MyTestGameCharacter_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

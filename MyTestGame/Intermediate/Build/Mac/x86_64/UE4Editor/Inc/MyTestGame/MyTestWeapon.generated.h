@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MYTESTGAME_MyTestWeapon_generated_h
 
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_SPARSE_DATA
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_RPC_WRAPPERS
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_INCLASS_NO_PURE_DECLS \
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_SPARSE_DATA
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_RPC_WRAPPERS
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyTestWeapon(); \
 	friend struct Z_Construct_UClass_AMyTestWeapon_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AMyTestWeapon)
 
 
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_INCLASS \
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAMyTestWeapon(); \
 	friend struct Z_Construct_UClass_AMyTestWeapon_Statics; \
@@ -34,9 +34,9 @@ public: \
 	DECLARE_SERIALIZER(AMyTestWeapon)
 
 
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_STANDARD_CONSTRUCTORS \
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AMyTestWeapon(const FObjectInitializer& ObjectInitializer); \
+	NO_API AMyTestWeapon(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyTestWeapon) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AMyTestWeapon); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMyTestWeapon); \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_ENHANCED_CONSTRUCTORS \
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMyTestWeapon(AMyTestWeapon&&); \
@@ -55,31 +55,35 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AMyTestWeapon); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMyTestWeapon); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMyTestWeapon)
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyTestWeapon)
 
 
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_PRIVATE_PROPERTY_OFFSET
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_9_PROLOG
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_GENERATED_BODY_LEGACY \
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__WeaponMesh() { return STRUCT_OFFSET(AMyTestWeapon, WeaponMesh); } \
+	FORCEINLINE static uint32 __PPO__WeaponCollision() { return STRUCT_OFFSET(AMyTestWeapon, WeaponCollision); }
+
+
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_11_PROLOG
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_PRIVATE_PROPERTY_OFFSET \
-	MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_SPARSE_DATA \
-	MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_RPC_WRAPPERS \
-	MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_INCLASS \
-	MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_STANDARD_CONSTRUCTORS \
+	MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_PRIVATE_PROPERTY_OFFSET \
+	MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_SPARSE_DATA \
+	MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_RPC_WRAPPERS \
+	MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_INCLASS \
+	MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_GENERATED_BODY \
+#define MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_PRIVATE_PROPERTY_OFFSET \
-	MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_SPARSE_DATA \
-	MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_INCLASS_NO_PURE_DECLS \
-	MyTestGame_Source_MyTestGame_MyTestWeapon_h_12_ENHANCED_CONSTRUCTORS \
+	MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_PRIVATE_PROPERTY_OFFSET \
+	MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_SPARSE_DATA \
+	MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_INCLASS_NO_PURE_DECLS \
+	MyTestGame_Source_MyTestGame_MyTestWeapon_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

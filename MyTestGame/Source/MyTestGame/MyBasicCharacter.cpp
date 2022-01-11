@@ -47,8 +47,8 @@ void AMyBasicCharacter::Attack_Melee()
 	{
 		if(ComboAttack_Num < 3)
 		{
-			const int tmp_Num = rand() % 3 + 1;
-			const FString PlaySection = "Attack_" + FString::FromInt(tmp_Num);
+			int tmp_Num = rand() % 3 + 1;
+			FString PlaySection = "Attack_" + FString::FromInt(tmp_Num);
 			PlayAnimMontage(Attack_AnimMontage, 1.f, FName(*PlaySection));
 
 			ComboAttack_Num++;

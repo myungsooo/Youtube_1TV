@@ -5,6 +5,7 @@
 #include "Engine.h"
 #include "MyTestWeapon.h"
 #include "Kismet/GameplayStatics.h"
+#include "MyTestWeapon.h"
 
 // Sets default values
 AMyBasicCharacter::AMyBasicCharacter()
@@ -62,6 +63,20 @@ void AMyBasicCharacter::SetCurrentWeapon(AMyTestWeapon* NewWeapon, AMyTestWeapon
 	{
 		NewWeapon->SetOwningPawn(this);
 		NewWeapon->OnEquip(LastWeapon);
+	}
+}
+
+void AMyBasicCharacter::SpawnDefaultInventory()
+{
+	int32 NumWeaponClasses = DefaultInventoryClasses.Num();
+	FActorSpawnParameters SpawnInfo;
+	UWorld* WRLD = GetWorld();
+	AMyTestWeapon* NewWeapon = WRLD->SpawnActor<AMyTestWeapon>(DefaultInventoryClasses[0], SpawnInfo);
+	AddWeapon(NewWeapon);
+
+	if (Inventory.Num() > 0)
+	{
+		EquipWeapon(Inventory[0]);
 	}
 }
 

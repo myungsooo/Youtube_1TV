@@ -59,7 +59,8 @@ public: \
 
 
 #define MyTestGame_Source_MyTestGame_MyBasicCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__WeaponAttachPoint() { return STRUCT_OFFSET(AMyBasicCharacter, WeaponAttachPoint); }
+	FORCEINLINE static uint32 __PPO__WeaponAttachPoint() { return STRUCT_OFFSET(AMyBasicCharacter, WeaponAttachPoint); } \
+	FORCEINLINE static uint32 __PPO__DefaultInventoryClasses() { return STRUCT_OFFSET(AMyBasicCharacter, DefaultInventoryClasses); }
 
 
 #define MyTestGame_Source_MyTestGame_MyBasicCharacter_h_9_PROLOG

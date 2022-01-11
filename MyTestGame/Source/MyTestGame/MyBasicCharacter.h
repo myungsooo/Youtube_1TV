@@ -35,6 +35,11 @@ protected:
 	void AddWeapon(class AMyTestWeapon* Weapon);
 	void SetCurrentWeapon(class AMyTestWeapon* NewWeapon, class AMyTestWeapon* LastWeapon);
 
+	void SpawnDefaultInventory();
+
+	UPROPERTY(EditDefaultsOnly, Category = Inventory)
+	TArray<TSubclassOf<class AMyTestWeapon>>DefaultInventoryClasses;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

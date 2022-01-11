@@ -27,6 +27,7 @@ AMyTestGameCharacter::AMyTestGameCharacter()
 void AMyTestGameCharacter::PostInitializeComponents()
 {
 	Super::PostInitializeComponents();
+	SpawnDefaultInventory();
 }
 
 void AMyTestGameCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -40,7 +41,7 @@ void AMyTestGameCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 
 void AMyTestGameCharacter::MoveForward(float value)
 {
-	if((Controller != NULL) && (value != 0.0f))
+	if((Controller != NULL) && (value != 0.0f) && !(isDuringAttack))
 	{
 		const FRotator Rot = Controller->GetControlRotation();
 		const FRotator YawRot(0, Rot.Yaw, 0);
@@ -52,7 +53,7 @@ void AMyTestGameCharacter::MoveForward(float value)
 
 void AMyTestGameCharacter::MoveRight(float value)
 {
-	if((Controller != NULL) && (value != 0.0f))
+	if((Controller != NULL) && (value != 0.0f) && !(isDuringAttack))
 	{
 		const FRotator Rot = Controller->GetControlRotation();
 		const FRotator YawRot(0, Rot.Yaw, 0);

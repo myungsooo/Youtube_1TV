@@ -43,6 +43,12 @@ protected:
 
 	void SpawnDefaultInventory();
 
+	virtual void OnHit(float DamageTaken, struct FDamageEvent const& DamageEvent, class APawn* PawnInstigator, class AActor* DamageCauser);
+
+	virtual void Die(float KillingDamage, struct FDamageEvent const& DamageEvent, AController* Killer, AActor* DamageCauser);
+
+	void DeathAnimationEnd();
+	
 	UPROPERTY(EditDefaultsOnly, Category = Inventory)
 	TArray<TSubclassOf<class AMyTestWeapon>>DefaultInventoryClasses;
 
@@ -68,13 +74,9 @@ public:
 	void ShowFX();
 
 	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
-	
-	virtual void OnHit(float DamageTaken, struct FDamageEvent const& DamageEvent, class Apawn* PawnInstigator, class AActor* DamageCauser);
+
 	
 	bool isDuringAttack = true;
 	int32 ComboAttack_Num;
 
-	// 이펙트
-	UPROPERTY(EditDefaultsOnly, Category = "MyFX")
-	UParticleSystem* HitFX;
 };

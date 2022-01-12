@@ -13,8 +13,7 @@ AMyBasicCharacter::AMyBasicCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	static ConstructorHelpers::FObjectFinder<UParticleSystem>ParticleAsset(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
-	HitFX = ParticleAsset.Object;
+	
 
 	isDuringAttack = false;
 	ComboAttack_Num = 0;
@@ -87,6 +86,57 @@ void AMyBasicCharacter::SpawnDefaultInventory()
 
 //-------------------------------------------------------------------
 
+void AMyBasicCharacter::OnHit(float DamageTaken, FDamageEvent const& DamageEvent, APawn* PawnInstigator, AActor* DamageCauser)
+{
+	PlayAnimMontage(BeHit_AnimMontage);
+	if (DamageTaken > 0.f)
+	{
+		ApplyDamageMomentum(DamageTaken, DamageEvent, PawnInstigator, DamageCauser);
+	}
+}
+
+
+void AMyBasicCharacter::Die(float KillingDamage, FDamageEvent const& DamageEvent, AController* Killer,
+	AActor* DamageCauser)
+{
+	myHealth = FMath::Min(0.f, myHealth);
+
+	UDamageType const* const DamageType = DamageEvent.DamageTypeClass?Cast<const UDamageType>(DamageEvent.DamageTypeClass->GetDefaultObject()) : GetDefault<UDamageType>();
+
+	Killer = GetDamageInstigator(Killer, *DamageType);
+
+	GetWorldTimerManager().ClearAllTimersForObject(this);
+
+	if (GetCapsuleComponent())
+	{
+		GetCapsuleComponent()->BodyInstance.GetCollisionEnabled(ECollisionEnabled::NoCollision);
+		GetCapsuleComponent()->BodyInstance.SetResponseToChannel(ECC_Pawn, ECR_Ignore);
+		GetCapsuleComponent()->BodyInstance.SetResponseToChannel(ECC_PhysicsBody, ECR_Ignore);
+	}
+
+	if (GetCharacterMovement())
+	{
+		GetCharacterMovement()->StopMovementImmediately();
+		GetCharacterMovement()->DisableMovement();
+	}
+
+	if (Controller != NULL)
+	{
+		Controller->UnPossess();
+	}
+
+	float DeathAnimDuration = PlayAnimMontage(Death_AnimMontage);
+
+	FTimerHandle TimerHandle;
+	GetWorldTimerManager().SetTimer(TimerHandle, this, &AMyBasicCharacter::DeathAnimationEnd, DeathAnimDuration, false);
+}
+
+// 죽은 뒤 처리
+void AMyBasicCharacter::DeathAnimationEnd()
+{
+	this->SetActorHiddenInGame(true);
+	SetLifeSpan(0.1f);
+}
 
 // Called when the game starts or when spawned
 void AMyBasicCharacter::BeginPlay()
@@ -141,29 +191,37 @@ void AMyBasicCharacter::Attack_Melee_End()
 
 void AMyBasicCharacter::ShowFX()
 {
-	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitFX, GetActorLocation());
 }
 
 float AMyBasicCharacter::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator,
 	AActor* DamageCauser)
 {
 	const float myGetDamage = Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+
+	if (myHealth <= 0.0f)
+	{
+		return 0.0f;
+	}
+	
+	if (myGetDamage > 0.f)
+	{
+		myHealth -= myGetDamage;
+	}
 	
 	if (myHealth <= 0)
 	{
-		this->Destroy();
+		//this->Destroy();
+		Die(myGetDamage, DamageEvent, EventInstigator, DamageCauser);
 	}
+	
 	else
 	{
+		OnHit(myGetDamage, DamageEvent, EventInstigator ? EventInstigator->GetPawn() : NULL, DamageCauser);
 		GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red, FString::Printf(TEXT("HP is : %f"), myHealth));
-		myHealth -= myGetDamage;
 	}
 	PlayAnimMontage(BeHit_AnimMontage, 1.0f);
 	return myGetDamage;
 }
 
-void AMyBasicCharacter::OnHit(float DamageTaken, FDamageEvent const& DamageEvent, Apawn* PawnInstigator,
-                              AActor* DamageCauser)
-{
-}
+
 

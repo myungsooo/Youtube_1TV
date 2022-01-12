@@ -39,4 +39,9 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+
+	
+	// 이펙트
+	UPROPERTY(EditDefaultsOnly, Category = "MyFX")
+	UParticleSystem* HitFX;
 };

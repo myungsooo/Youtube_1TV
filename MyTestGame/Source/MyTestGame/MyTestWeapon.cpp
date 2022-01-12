@@ -21,6 +21,10 @@ AMyTestWeapon::AMyTestWeapon(const class FObjectInitializer& ObjectInitializer):
 	WeaponCollision->SetBoxExtent(FVector(5.f, 5.f, 5.f));
 	WeaponCollision->AttachTo(WeaponMesh, "DamageSocket");
 
+	// 이펙트
+	static ConstructorHelpers::FObjectFinder<UParticleSystem>ParticleAsset(TEXT("ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'"));
+	HitFX = ParticleAsset.Object;
+
 }
 
 void AMyTestWeapon::SetOwningPawn(AMyBasicCharacter* NewOwner)
@@ -66,6 +70,9 @@ void AMyTestWeapon::NotifyActorBeginOverlap(AActor* OtherActor)
 	{
 		UGameplayStatics::ApplyDamage(OtherActor, 10.f, NULL,this, UDamageType::StaticClass());
 		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Red, "ApplyDamage!");
+
+		
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitFX, GetActorLocation());
 	}
 }
 

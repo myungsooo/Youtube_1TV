@@ -4,6 +4,8 @@
 #include "MyTestWeapon.h"
 
 #include "Components/BoxComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Engine.h"
 
 // Sets default values
 AMyTestWeapon::AMyTestWeapon(const class FObjectInitializer& ObjectInitializer):Super(ObjectInitializer)
@@ -56,5 +58,14 @@ void AMyTestWeapon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AMyTestWeapon::NotifyActorBeginOverlap(AActor* OtherActor)
+{
+	if (OtherActor->IsA(AActor::StaticClass()) && MyPawn->isDuringAttack)
+	{
+		UGameplayStatics::ApplyDamage(OtherActor, 10.f, NULL,this, UDamageType::StaticClass());
+		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Red, "ApplyDamage!");
+	}
 }
 

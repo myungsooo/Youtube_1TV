@@ -21,6 +21,12 @@ public:
 
 	void EquipWeapon(class AMyTestWeapon* Weapon);
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = MyState)
+	float myHealth;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = MyState)
+	float myMaxHealth;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -48,12 +54,23 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UPROPERTY(EditDefaultsOnly, Category = Pawn)
-	UAnimMontage* Attack_AnimMontage; 
+	UAnimMontage* Attack_AnimMontage;
+
+	UPROPERTY(EditDefaultsOnly, Category = Pawn)
+	UAnimMontage* BeHit_AnimMontage; // 맞을 떄 꿈틀대는 동작
+
+	UPROPERTY(EditDefaultsOnly, Category = Pawn)
+	UAnimMontage* Death_AnimMontage; // 죽을 때 동작
+	
 
 	void Attack_Melee();
 	void Attack_Melee_End();
 	void ShowFX();
 
+	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+	
+	virtual void OnHit(float DamageTaken, struct FDamageEvent const& DamageEvent, class Apawn* PawnInstigator, class AActor* DamageCauser);
+	
 	bool isDuringAttack = true;
 	int32 ComboAttack_Num;
 

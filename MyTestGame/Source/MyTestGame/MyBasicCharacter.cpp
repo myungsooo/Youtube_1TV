@@ -18,6 +18,10 @@ AMyBasicCharacter::AMyBasicCharacter()
 
 	isDuringAttack = false;
 	ComboAttack_Num = 0;
+	myHealth = 0.f;
+	myMaxHealth = 100.0f;
+
+	myHealth = myMaxHealth;
 	
 }
 
@@ -138,5 +142,28 @@ void AMyBasicCharacter::Attack_Melee_End()
 void AMyBasicCharacter::ShowFX()
 {
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitFX, GetActorLocation());
+}
+
+float AMyBasicCharacter::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator,
+	AActor* DamageCauser)
+{
+	const float myGetDamage = Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+	
+	if (myHealth <= 0)
+	{
+		this->Destroy();
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red, FString::Printf(TEXT("HP is : %f"), myHealth));
+		myHealth -= myGetDamage;
+	}
+	PlayAnimMontage(BeHit_AnimMontage, 1.0f);
+	return myGetDamage;
+}
+
+void AMyBasicCharacter::OnHit(float DamageTaken, FDamageEvent const& DamageEvent, Apawn* PawnInstigator,
+                              AActor* DamageCauser)
+{
 }
 

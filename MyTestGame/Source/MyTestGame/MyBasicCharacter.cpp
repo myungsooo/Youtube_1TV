@@ -72,10 +72,13 @@ void AMyBasicCharacter::SetCurrentWeapon(AMyTestWeapon* NewWeapon, AMyTestWeapon
 void AMyBasicCharacter::SpawnDefaultInventory()
 {
 	int32 NumWeaponClasses = DefaultInventoryClasses.Num();
-	FActorSpawnParameters SpawnInfo;
-	UWorld* WRLD = GetWorld();
-	AMyTestWeapon* NewWeapon = WRLD->SpawnActor<AMyTestWeapon>(DefaultInventoryClasses[0], SpawnInfo);
-	AddWeapon(NewWeapon);
+	if (DefaultInventoryClasses[0])
+	{
+		FActorSpawnParameters SpawnInfo;
+		UWorld* WRLD = GetWorld();
+		AMyTestWeapon* NewWeapon = WRLD->SpawnActor<AMyTestWeapon>(DefaultInventoryClasses[0], SpawnInfo);
+		AddWeapon(NewWeapon);
+	}
 
 	if (Inventory.Num() > 0)
 	{
@@ -208,7 +211,7 @@ float AMyBasicCharacter::TakeDamage(float Damage, FDamageEvent const& DamageEven
 		myHealth -= myGetDamage;
 	}
 	
-	if (myHealth <= 0)
+	if (myHealth <= 0.f)
 	{
 		//this->Destroy();
 		Die(myGetDamage, DamageEvent, EventInstigator, DamageCauser);
@@ -219,7 +222,7 @@ float AMyBasicCharacter::TakeDamage(float Damage, FDamageEvent const& DamageEven
 		OnHit(myGetDamage, DamageEvent, EventInstigator ? EventInstigator->GetPawn() : NULL, DamageCauser);
 		GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red, FString::Printf(TEXT("HP is : %f"), myHealth));
 	}
-	PlayAnimMontage(BeHit_AnimMontage, 1.0f);
+	
 	return myGetDamage;
 }
 

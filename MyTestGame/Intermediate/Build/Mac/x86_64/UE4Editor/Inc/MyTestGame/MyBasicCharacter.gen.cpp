@@ -20,7 +20,6 @@ void EmptyLinkFunctionForGeneratedCodeMyBasicCharacter() {}
 	MYTESTGAME_API UClass* Z_Construct_UClass_AMyTestWeapon_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 // End Cross Module References
 	void AMyBasicCharacter::StaticRegisterNativesAMyBasicCharacter()
 	{
@@ -64,10 +63,6 @@ void EmptyLinkFunctionForGeneratedCodeMyBasicCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Death_AnimMontage_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Death_AnimMontage;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitFX_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HitFX;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -135,15 +130,6 @@ void EmptyLinkFunctionForGeneratedCodeMyBasicCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_Death_AnimMontage = { "Death_AnimMontage", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyBasicCharacter, Death_AnimMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_Death_AnimMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_Death_AnimMontage_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_HitFX_MetaData[] = {
-		{ "Category", "MyFX" },
-		{ "Comment", "// \xec\x9d\xb4\xed\x8e\x99\xed\x8a\xb8\n" },
-		{ "ModuleRelativePath", "MyBasicCharacter.h" },
-		{ "ToolTip", "\xec\x9d\xb4\xed\x8e\x99\xed\x8a\xb8" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_HitFX = { "HitFX", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyBasicCharacter, HitFX), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_HitFX_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_HitFX_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyBasicCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_myHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_myMaxHealth,
@@ -153,7 +139,6 @@ void EmptyLinkFunctionForGeneratedCodeMyBasicCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_Attack_AnimMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_BeHit_AnimMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_Death_AnimMontage,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyBasicCharacter_Statics::NewProp_HitFX,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMyBasicCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMyBasicCharacter>::IsAbstract,
@@ -182,7 +167,7 @@ void EmptyLinkFunctionForGeneratedCodeMyBasicCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyBasicCharacter, 1271416930);
+	IMPLEMENT_CLASS(AMyBasicCharacter, 2010399128);
 	template<> MYTESTGAME_API UClass* StaticClass<AMyBasicCharacter>()
 	{
 		return AMyBasicCharacter::StaticClass();

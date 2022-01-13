@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeMyTestGameBot() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyTestGameBot, 2027273479);
+	IMPLEMENT_CLASS(AMyTestGameBot, 89185748);
 	template<> MYTESTGAME_API UClass* StaticClass<AMyTestGameBot>()
 	{
 		return AMyTestGameBot::StaticClass();

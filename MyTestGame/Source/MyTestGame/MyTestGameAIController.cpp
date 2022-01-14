@@ -49,6 +49,17 @@ void AMyTestGameAIController::OnPossess(APawn* Pawn)
 void AMyTestGameAIController::Tick(float DeltaSeconds)
 {
 	AMyTestGameCharacter* Character = Cast<AMyTestGameCharacter>(GetPawn());
+
+	if (DistanceToPlayer > AISightRadius)
+	{
+		bIsPlayerDetected = false;
+	}
+	
+	if (bIsPlayerDetected == true)
+	{
+		AMyTestGameCharacter* Player = Cast<AMyTestGameCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+		MoveToActor(Player, 5.0f);
+	}
 }
 
 FRotator AMyTestGameAIController::GetControlRotation() const
@@ -63,4 +74,12 @@ FRotator AMyTestGameAIController::GetControlRotation() const
 
 void AMyTestGameAIController::OnPawnDetected(const TArray<AActor*> &DetectedPawns)
 {
+	for (size_t i = 0; i < DetectedPawns.Num(); i++)
+	{
+		DistanceToPlayer = GetPawn()->GetDistanceTo(DetectedPawns[i]);
+
+		UE_LOG(LogTemp, Warning, TEXT("Distance : %f"), DistanceToPlayer);
+	}
+
+	bIsPlayerDetected = true;
 }

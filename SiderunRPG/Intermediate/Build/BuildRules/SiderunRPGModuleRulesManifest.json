@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/song/soo/Youtube_1TV/SiderunRPG/Source/SiderunRPG/SiderunRPG.Build.cs",
+		"/Users/song/soo/Youtube_1TV/SiderunRPG/Source/SiderunRPG.Target.cs",
+		"/Users/song/soo/Youtube_1TV/SiderunRPG/Source/SiderunRPGEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.1"
+}

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SiderunRPG",
+			"Path": "/Users/song/soo/Youtube_1TV/SiderunRPG/Source/SiderunRPG.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SiderunRPGEditor",
+			"Path": "/Users/song/soo/Youtube_1TV/SiderunRPG/Source/SiderunRPGEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SIDERUNRPG_SiderunRPGGameModeBase_generated_h
 
 #define SiderunRPG_Source_SiderunRPG_SiderunRPGGameModeBase_h_15_SPARSE_DATA
-#define SiderunRPG_Source_SiderunRPG_SiderunRPGGameModeBase_h_15_RPC_WRAPPERS
-#define SiderunRPG_Source_SiderunRPG_SiderunRPGGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define SiderunRPG_Source_SiderunRPG_SiderunRPGGameModeBase_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSpawnFloors);
+
+
+#define SiderunRPG_Source_SiderunRPG_SiderunRPGGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSpawnFloors);
+
+
 #define SiderunRPG_Source_SiderunRPG_SiderunRPGGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASiderunRPGGameModeBase(); \

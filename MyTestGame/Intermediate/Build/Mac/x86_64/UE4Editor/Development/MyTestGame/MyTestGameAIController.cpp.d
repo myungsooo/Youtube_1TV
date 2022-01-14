@@ -2726,4 +2726,23 @@
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AISenseConfig.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/AIModule/Classes/Perception/AISense_Sight.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AISense_Sight.generated.h \
-  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AISenseConfig_Sight.generated.h
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AISenseConfig_Sight.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/KismetSystemLibrary.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Sound/DialogueTypes.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/DialogueTypes.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStaticsTypes.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/GameplayStaticsTypes.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/GameplayStatics.generated.h \
+  /Users/song/soo/Youtube_1TV/MyTestGame/Source/MyTestGame/MyTestGameCharacter.h \
+  /Users/song/soo/Youtube_1TV/MyTestGame/Source/MyTestGame/MyBasicCharacter.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/CharacterMovementReplication.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/RootMotionSource.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/Character.generated.h \
+  /Users/song/soo/Youtube_1TV/MyTestGame/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestGame/MyBasicCharacter.generated.h \
+  /Users/song/soo/Youtube_1TV/MyTestGame/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestGame/MyTestGameCharacter.generated.h

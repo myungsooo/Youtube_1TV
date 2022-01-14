@@ -4,6 +4,8 @@
 #include "MyTestGameAIController.h"
 #include "Perception/AIPerceptionComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
+#include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
+#include "MyTestGameCharacter.h"
 
 AMyTestGameAIController::AMyTestGameAIController()
 {
@@ -46,7 +48,7 @@ void AMyTestGameAIController::OnPossess(APawn* Pawn)
 
 void AMyTestGameAIController::Tick(float DeltaSeconds)
 {
-	Super::Tick(DeltaSeconds);
+	AMyTestGameCharacter* Character = Cast<AMyTestGameCharacter>(GetPawn());
 }
 
 FRotator AMyTestGameAIController::GetControlRotation() const

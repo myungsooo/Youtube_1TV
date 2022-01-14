@@ -92,6 +92,31 @@ void EmptyLinkFunctionForGeneratedCodeMyTestGameAIController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AISightRadius_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AISightRadius;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AISightAge_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AISightAge;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AILoseSightRadius_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AILoseSightRadius;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AIFieldOfView_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AIFieldOfView;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsPlayerDetected_MetaData[];
+#endif
+		static void NewProp_bIsPlayerDetected_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsPlayerDetected;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DistanceToPlayer_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DistanceToPlayer;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BlackboardComp_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BlackboardComp;
@@ -118,6 +143,56 @@ void EmptyLinkFunctionForGeneratedCodeMyTestGameAIController() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AISightRadius_MetaData[] = {
+		{ "Category", "AI" },
+		{ "Comment", "// \xec\x8b\x9c\xec\x95\xbc \n" },
+		{ "ModuleRelativePath", "MyTestGameAIController.h" },
+		{ "ToolTip", "\xec\x8b\x9c\xec\x95\xbc" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AISightRadius = { "AISightRadius", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTestGameAIController, AISightRadius), METADATA_PARAMS(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AISightRadius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AISightRadius_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AISightAge_MetaData[] = {
+		{ "Category", "AI" },
+		{ "ModuleRelativePath", "MyTestGameAIController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AISightAge = { "AISightAge", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTestGameAIController, AISightAge), METADATA_PARAMS(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AISightAge_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AISightAge_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AILoseSightRadius_MetaData[] = {
+		{ "Category", "AI" },
+		{ "ModuleRelativePath", "MyTestGameAIController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AILoseSightRadius = { "AILoseSightRadius", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTestGameAIController, AILoseSightRadius), METADATA_PARAMS(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AILoseSightRadius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AILoseSightRadius_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AIFieldOfView_MetaData[] = {
+		{ "Category", "AI" },
+		{ "ModuleRelativePath", "MyTestGameAIController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AIFieldOfView = { "AIFieldOfView", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTestGameAIController, AIFieldOfView), METADATA_PARAMS(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AIFieldOfView_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AIFieldOfView_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_bIsPlayerDetected_MetaData[] = {
+		{ "Category", "AI" },
+		{ "ModuleRelativePath", "MyTestGameAIController.h" },
+	};
+#endif
+	void Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_bIsPlayerDetected_SetBit(void* Obj)
+	{
+		((AMyTestGameAIController*)Obj)->bIsPlayerDetected = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_bIsPlayerDetected = { "bIsPlayerDetected", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AMyTestGameAIController), &Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_bIsPlayerDetected_SetBit, METADATA_PARAMS(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_bIsPlayerDetected_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_bIsPlayerDetected_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_DistanceToPlayer_MetaData[] = {
+		{ "Category", "AI" },
+		{ "Comment", "// \xed\x94\x8c\xeb\xa0\x88\xec\x9d\xb4\xec\x96\xb4\xea\xb0\x84\xec\x97\x90 \xea\xb1\xb0\xeb\xa6\xac\xeb\xa5\xbc \xed\x95\xa0\xec\x88\x98 \xec\x9e\x88\xea\xb2\x8c\n" },
+		{ "ModuleRelativePath", "MyTestGameAIController.h" },
+		{ "ToolTip", "\xed\x94\x8c\xeb\xa0\x88\xec\x9d\xb4\xec\x96\xb4\xea\xb0\x84\xec\x97\x90 \xea\xb1\xb0\xeb\xa6\xac\xeb\xa5\xbc \xed\x95\xa0\xec\x88\x98 \xec\x9e\x88\xea\xb2\x8c" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_DistanceToPlayer = { "DistanceToPlayer", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTestGameAIController, DistanceToPlayer), METADATA_PARAMS(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_DistanceToPlayer_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_DistanceToPlayer_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_BlackboardComp_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "MyTestGameAIController.h" },
@@ -132,6 +207,12 @@ void EmptyLinkFunctionForGeneratedCodeMyTestGameAIController() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_BehaviorComp = { "BehaviorComp", nullptr, (EPropertyFlags)0x0040000000082008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTestGameAIController, BehaviorComp), Z_Construct_UClass_UBehaviorTreeComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_BehaviorComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_BehaviorComp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyTestGameAIController_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AISightRadius,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AISightAge,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AILoseSightRadius,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_AIFieldOfView,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_bIsPlayerDetected,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_DistanceToPlayer,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_BlackboardComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTestGameAIController_Statics::NewProp_BehaviorComp,
 	};
@@ -162,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeMyTestGameAIController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyTestGameAIController, 2093836880);
+	IMPLEMENT_CLASS(AMyTestGameAIController, 1028963982);
 	template<> MYTESTGAME_API UClass* StaticClass<AMyTestGameAIController>()
 	{
 		return AMyTestGameAIController::StaticClass();

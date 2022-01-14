@@ -22,4 +22,7 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG Game")
 	TSubclassOf<UUserWidget> HUDWidget;
+
+	UFUNCTION()
+	void SpawnFloors();
 };

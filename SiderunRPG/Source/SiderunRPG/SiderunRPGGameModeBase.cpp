@@ -10,4 +10,10 @@ void ASiderunRPGGameModeBase::BeginPlay()
 
 	CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), HUDWidget);
 	CurrentWidget->AddToViewport();
+
+	SpawnFloors();
+}
+
+void ASiderunRPGGameModeBase::SpawnFloors()
+{
 }

@@ -2706,4 +2706,24 @@
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Public/VisualLogger/VisualLoggerDebugSnapshotInterface.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/VisualLoggerDebugSnapshotInterface.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AIController.generated.h \
-  /Users/song/soo/Youtube_1TV/MyTestGame/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestGame/MyTestGameAIController.generated.h
+  /Users/song/soo/Youtube_1TV/MyTestGame/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/MyTestGame/MyTestGameAIController.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/AIModule/Classes/Perception/AIPerceptionComponent.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/AIModule/Classes/Perception/AIPerceptionTypes.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AIPerceptionTypes.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/AIModule/Classes/Perception/AISense.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AISense.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/AIModule/Classes/Perception/AIPerceptionSystem.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/AIModule/Classes/AISubsystem.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/AIModule/Classes/AISystem.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/AI/AISystemBase.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/AISystemBase.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AISystem.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AISubsystem.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AIPerceptionSystem.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AIPerceptionComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/AIModule/Classes/Perception/AISenseConfig_Sight.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/AIModule/Classes/Perception/AISenseConfig.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AISenseConfig.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/AIModule/Classes/Perception/AISense_Sight.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AISense_Sight.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/AIModule/AISenseConfig_Sight.generated.h

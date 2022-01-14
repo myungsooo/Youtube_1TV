@@ -60,7 +60,11 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASiderunRPGGameModeBase)
 
 
-#define SiderunRPG_Source_SiderunRPG_SiderunRPGGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET
+#define SiderunRPG_Source_SiderunRPG_SiderunRPGGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CurrentWidget() { return STRUCT_OFFSET(ASiderunRPGGameModeBase, CurrentWidget); } \
+	FORCEINLINE static uint32 __PPO__HUDWidget() { return STRUCT_OFFSET(ASiderunRPGGameModeBase, HUDWidget); }
+
+
 #define SiderunRPG_Source_SiderunRPG_SiderunRPGGameModeBase_h_12_PROLOG
 #define SiderunRPG_Source_SiderunRPG_SiderunRPGGameModeBase_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

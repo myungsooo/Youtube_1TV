@@ -2677,4 +2677,7 @@
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/RootMotionSource.generated.h \
   /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/Character.generated.h \
   /Users/song/soo/Youtube_1TV/SiderunRPG/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/SiderunRPG/MyBasicCharacter.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Engine/DataTable.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Public/DataTableUtils.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/DataTable.generated.h \
   /Users/song/soo/Youtube_1TV/SiderunRPG/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/SiderunRPG/MyHeroCharacter.generated.h

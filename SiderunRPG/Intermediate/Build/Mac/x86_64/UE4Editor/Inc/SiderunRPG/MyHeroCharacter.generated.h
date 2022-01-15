@@ -13,10 +13,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SIDERUNRPG_MyHeroCharacter_generated_h
 
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_SPARSE_DATA
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_RPC_WRAPPERS
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_INCLASS_NO_PURE_DECLS \
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_17_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FHeroInfo_Statics; \
+	SIDERUNRPG_API static class UScriptStruct* StaticStruct(); \
+	typedef FTableRowBase Super;
+
+
+template<> SIDERUNRPG_API UScriptStruct* StaticStruct<struct FHeroInfo>();
+
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_SPARSE_DATA
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_RPC_WRAPPERS
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_RPC_WRAPPERS_NO_PURE_DECLS
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyHeroCharacter(); \
 	friend struct Z_Construct_UClass_AMyHeroCharacter_Statics; \
@@ -25,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(AMyHeroCharacter)
 
 
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_INCLASS \
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_INCLASS \
 private: \
 	static void StaticRegisterNativesAMyHeroCharacter(); \
 	friend struct Z_Construct_UClass_AMyHeroCharacter_Statics; \
@@ -34,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(AMyHeroCharacter)
 
 
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_STANDARD_CONSTRUCTORS \
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMyHeroCharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyHeroCharacter) \
@@ -47,7 +55,7 @@ private: \
 public:
 
 
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_ENHANCED_CONSTRUCTORS \
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMyHeroCharacter() { }; \
 private: \
@@ -60,28 +68,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMyHeroCharacter)
 
 
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_PRIVATE_PROPERTY_OFFSET
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_12_PROLOG
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_GENERATED_BODY_LEGACY \
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_PRIVATE_PROPERTY_OFFSET
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_46_PROLOG
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_SPARSE_DATA \
-	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_RPC_WRAPPERS \
-	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_INCLASS \
-	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_STANDARD_CONSTRUCTORS \
+	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_PRIVATE_PROPERTY_OFFSET \
+	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_SPARSE_DATA \
+	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_RPC_WRAPPERS \
+	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_INCLASS \
+	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_GENERATED_BODY \
+#define SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_SPARSE_DATA \
-	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_INCLASS_NO_PURE_DECLS \
-	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_15_ENHANCED_CONSTRUCTORS \
+	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_PRIVATE_PROPERTY_OFFSET \
+	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_SPARSE_DATA \
+	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
+	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_INCLASS_NO_PURE_DECLS \
+	SiderunRPG_Source_SiderunRPG_Character_MyHeroCharacter_h_49_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -35,6 +35,9 @@ void AMyFloor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	FVector Location = GetActorLocation();
+	Location += GetActorForwardVector() * MoveSpeed * DeltaTime;
+	SetActorLocation(Location);
 }
 
 void AMyFloor::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,

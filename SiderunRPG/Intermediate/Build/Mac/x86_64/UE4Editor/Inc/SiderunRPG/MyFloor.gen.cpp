@@ -144,6 +144,10 @@ void EmptyLinkFunctionForGeneratedCodeMyFloor() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CollisionBox_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CollisionBox;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MoveSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MoveSpeed;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -177,9 +181,17 @@ void EmptyLinkFunctionForGeneratedCodeMyFloor() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyFloor_Statics::NewProp_CollisionBox = { "CollisionBox", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyFloor, CollisionBox), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyFloor_Statics::NewProp_CollisionBox_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyFloor_Statics::NewProp_CollisionBox_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyFloor_Statics::NewProp_MoveSpeed_MetaData[] = {
+		{ "Category", "MoveFloor" },
+		{ "ModuleRelativePath", "MyFloor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMyFloor_Statics::NewProp_MoveSpeed = { "MoveSpeed", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyFloor, MoveSpeed), METADATA_PARAMS(Z_Construct_UClass_AMyFloor_Statics::NewProp_MoveSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyFloor_Statics::NewProp_MoveSpeed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyFloor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyFloor_Statics::NewProp_mStaticMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyFloor_Statics::NewProp_CollisionBox,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyFloor_Statics::NewProp_MoveSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMyFloor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMyFloor>::IsAbstract,
@@ -208,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodeMyFloor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyFloor, 1954467715);
+	IMPLEMENT_CLASS(AMyFloor, 4252002133);
 	template<> SIDERUNRPG_API UClass* StaticClass<AMyFloor>()
 	{
 		return AMyFloor::StaticClass();

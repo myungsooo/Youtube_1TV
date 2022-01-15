@@ -2667,4 +2667,21 @@
   /Users/song/soo/Youtube_1TV/SiderunRPG/Source/SiderunRPG/MyFloor.cpp \
   /Users/song/soo/Youtube_1TV/SiderunRPG/Intermediate/Build/Mac/x86_64/UE4Editor/Development/SiderunRPG/Definitions.SiderunRPG.h \
   /Users/song/soo/Youtube_1TV/SiderunRPG/Source/SiderunRPG/MyFloor.h \
-  /Users/song/soo/Youtube_1TV/SiderunRPG/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/SiderunRPG/MyFloor.generated.h
+  /Users/song/soo/Youtube_1TV/SiderunRPG/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/SiderunRPG/MyFloor.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Components/ShapeComponent.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/ShapeComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/BoxComponent.generated.h \
+  /Users/song/soo/Youtube_1TV/SiderunRPG/Source/SiderunRPG/Character/MyHeroCharacter.h \
+  /Users/song/soo/Youtube_1TV/SiderunRPG/Source/SiderunRPG/Character/MyBasicCharacter.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/CharacterMovementReplication.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/RootMotionSource.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/Character.generated.h \
+  /Users/song/soo/Youtube_1TV/SiderunRPG/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/SiderunRPG/MyBasicCharacter.generated.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Classes/Engine/DataTable.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Source/Runtime/Engine/Public/DataTableUtils.h \
+  /Users/Shared/Epic\ Games/UE_4.27/Engine/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/Engine/DataTable.generated.h \
+  /Users/song/soo/Youtube_1TV/SiderunRPG/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/SiderunRPG/MyHeroCharacter.generated.h

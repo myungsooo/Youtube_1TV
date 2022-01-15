@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef SIDERUNRPG_MyFloor_generated_h
 #error "MyFloor.generated.h already included, missing '#pragma once' in MyFloor.h"
 #endif
 #define SIDERUNRPG_MyFloor_generated_h
 
 #define SiderunRPG_Source_SiderunRPG_MyFloor_h_12_SPARSE_DATA
-#define SiderunRPG_Source_SiderunRPG_MyFloor_h_12_RPC_WRAPPERS
-#define SiderunRPG_Source_SiderunRPG_MyFloor_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define SiderunRPG_Source_SiderunRPG_MyFloor_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
+#define SiderunRPG_Source_SiderunRPG_MyFloor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
 #define SiderunRPG_Source_SiderunRPG_MyFloor_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyFloor(); \

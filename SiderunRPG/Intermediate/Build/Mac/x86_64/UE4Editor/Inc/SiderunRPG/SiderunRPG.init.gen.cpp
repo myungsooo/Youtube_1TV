@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeSiderunRPG_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x4151E73E,
+				0x9DC09E3A,
 				0x75AD3D5B,
 				METADATA_PARAMS(nullptr, 0)
 			};
